@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela De Login</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/midia-query.css">
 </head>
 <body>
     <main>
+       
         <section id="login">
             <div id="img">
                        <!--foto na css-->
@@ -18,8 +20,23 @@
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as cofiguração no seu ambiente.</p>
             </div>
-            <form action="login.php" method="post">
-
+            <form action="login.php" method="post" autocomplete="on">
+               <div class="campo" >
+                   <i id="icone" class="material-icons">person</i>
+                   <input type="email" name="login" id="1login" placeholder="seu e-mail" autocomplete="email" required maxlength="30">
+                   <label for="1login">Login</label>
+               </div>
+               <div class="campo" >
+                   <i id="icone" class="material-icons">vpn_key</i>
+                   <input type="password" name="senha" id="1senha" placeholder="sua senha" autocomplete="current-password" required minlength="8">
+                   <label for="1senha">Senha</label>
+               </div>
+               <div>
+                <input type="submit" value="entra">
+                <input type="reset" value="linpar">
+                <a href="senha.html">Esqueçe a senha! <i id="icone" class="material-icons">mail</i></a>
+                
+               </div>
 
             </form>
 
