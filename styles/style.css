@@ -24,16 +24,15 @@ section#login{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%) ;
     overflow: hidden;
-
     background-color:white ;
-    width: 250px;
-    height: 500px;
+    width: 255px;
+    height: 560px;
     border-radius: 20px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.603) ;
 
     transition:width 0.5s, height 0.5s;
+    transform: translate(-50%,-50%) ;
 
 }
 section#login > div#img{
@@ -45,7 +44,7 @@ section#login > div#img{
 }
 section#login > div#form{
     display: block;
-    padding: 10px;
+   
 }
 div#form>h1{
     text-align: center;
@@ -54,5 +53,74 @@ div#form>h1{
 }
 div#form>p{
    font-size: 0.8em;
+   
+}
+form >div.campo{
+    padding: 8px;
+    background-color: #5f2c82;
+    border-radius: 5px;
+    margin: 5px 0px;
+
+}
+div.campo>label{
+    display: none;
+}
+form >div.campo>i{
+ color:white;
+
+ font-size: 2em;
+ width: 40px;
+ padding: 5;
+}
+form >div>input{
+   
+    height: 100%;
+    
+    transform: translateY(-4px);
+   
+    border-radius: 5px;
+   
+}
+form >div> input#dado{
+    background-color: #49a09d;
+    display: block;
+    width: 90%;
+   font-size: 1em;
+   height: 40px;
+   color: white;
+   border: none;
+   border-radius: 5px;
+
+   
+   cursor: pointer;
+   margin: auto;
+   margin-top: 2px;
+}
+form >div> input#dado:hover{
+    background-color: #275553;
     
 }
+form > div.b1 { 
+ 
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 90%;
+    height: 40px;
+    background-color: #4fa8a57a;
+    margin: auto;
+    margin-top: 3px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+form > div > a.b2{
+    text-decoration: none;
+    color: white;
+}
+section> form > div.b1:hover{
+    background-color: #275553;  
+    text-decoration-color: white;
+}
+
+
+
